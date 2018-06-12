@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRi-oL-F0F">
+                                <rect key="frame" x="165" y="160" width="45" height="30"/>
+                                <state key="normal" title="Purple"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7d-Y3-Opb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-dg-jau">
+                                <rect key="frame" x="172" y="202" width="31" height="30"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yLi-yM-d7V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymb-Gj-8zz">
+                                <rect key="frame" x="167" y="244" width="42" height="30"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsk-LW-URc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGx-ck-3yd">
+                                <rect key="frame" x="162" y="286" width="51" height="30"/>
+                                <state key="normal" title="Orange"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYz-Qg-AiY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daS-IH-cOl">
+                                <rect key="frame" x="168" y="370" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zct-On-m6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyN-UR-GbW">
+                                <rect key="frame" x="173" y="328" width="30" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLU-84-Uz6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MyN-UR-GbW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0AN-E8-gO4"/>
+                            <constraint firstItem="daS-IH-cOl" firstAttribute="top" secondItem="MyN-UR-GbW" secondAttribute="bottom" constant="12" id="1Cw-Z0-g2g"/>
+                            <constraint firstItem="iKd-dg-jau" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IYw-Uz-fEL"/>
+                            <constraint firstItem="FGx-ck-3yd" firstAttribute="top" secondItem="ymb-Gj-8zz" secondAttribute="bottom" constant="12" id="Lkx-5Z-jOq"/>
+                            <constraint firstItem="FGx-ck-3yd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Moc-72-eti"/>
+                            <constraint firstItem="BRi-oL-F0F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e4t-3a-ldC"/>
+                            <constraint firstItem="BRi-oL-F0F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="gbv-3z-SO3"/>
+                            <constraint firstItem="ymb-Gj-8zz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i27-Ro-ZLN"/>
+                            <constraint firstItem="ymb-Gj-8zz" firstAttribute="top" secondItem="iKd-dg-jau" secondAttribute="bottom" constant="12" id="rzD-Yc-HzE"/>
+                            <constraint firstItem="iKd-dg-jau" firstAttribute="top" secondItem="BRi-oL-F0F" secondAttribute="bottom" constant="12" id="uhG-vD-YkC"/>
+                            <constraint firstItem="MyN-UR-GbW" firstAttribute="top" secondItem="FGx-ck-3yd" secondAttribute="bottom" constant="12" id="unb-cV-OUu"/>
+                            <constraint firstItem="daS-IH-cOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zNh-Ld-GF1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
